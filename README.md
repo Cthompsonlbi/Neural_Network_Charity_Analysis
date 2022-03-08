@@ -108,7 +108,7 @@ The approach that I took for my first attempt to optimize the model was to try t
 
 The approach that I took for my second attempt to optimize the model was to keep the changes made for the first optimization which was meant to reduce noise from the model and increase the epochs.  To reduce "Noise" I dropped the "SPECIAL_CONSIDERATIONS" column and created code to create bins for the "ASK_AMT" to reduce the impact of outliers on the model. Then I added two additional layers and increased the Neurons of he original two hidden layers.  After running the model with these modifications the results yielded very little improvement.
 
-![Del3Opt2mod](Images/Del3Opt2mod.png)
+![Del3Opt2Mod](Images/Del3Opt2Mod.png)
 ![Del3Opt2](Images/Del3Opt2.png)
 
 #### Optimization 3
