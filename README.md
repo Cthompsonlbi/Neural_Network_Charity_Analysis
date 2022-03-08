@@ -99,11 +99,15 @@ The neural network model using Tensorflow Keras contains working code that highl
 
 #### Optimization 1
 
+Link to Optimization one notebook can be found here [Optimization_1](AlphabetSoupCharity_Optimization_1.ipynb)
+
 The approach that I took for my first attempt to optimize the model was to try to reduce noise from the model and increase the epochs from 50 to 150.  To reduce "Noise" I dropped the "SPECIAL_CONSIDERATIONS" column and created code to create bins for the "ASK_AMT" to reduce the impact of outliers on the model. After running the model with these modifications, the results yielded very little improvement.
 
 ![Del3Opt1](Images/Del3Opt1.png)
 
 #### Optimization 2
+
+Link to Optimization one notebook can be found here [Optimization_2](AlphabetSoupCharity_Optimization_2.ipynb)
 
 The approach that I took for my second attempt to optimize the model was to keep the changes made for the first optimization which was meant to reduce noise from the model and increase the epochs.  To reduce "Noise" I dropped the "SPECIAL_CONSIDERATIONS" column and created code to create bins for the "ASK_AMT" to reduce the impact of outliers on the model. Then I added two additional layers and increased the Neurons of he original two hidden layers.  Finally, I increased Epochs from 100 to 150.  After running the model with these modifications, the results yielded very little improvement.
 
@@ -113,6 +117,8 @@ The approach that I took for my second attempt to optimize the model was to keep
 ![Del3Opt2](Images/Del3Opt2.png)
 
 #### Optimization 3
+
+Link to Optimization one notebook can be found here [Optimization_3](AlphabetSoupCharity_Optimization_3.ipynb)
 
 For the third optimization attempt, I kept intact the changes made during the first two optimization attempts.  My approach to improve the optimization of this model was to try to find more possible noise contributors remove it. I also added Neurons to the existing hidden layers and changed the Activation on one of the layers.  To reduce the noise further, I dropped the USE_CASE and STATUS Features from the dataset and for the INCOME_AMT feature I grouped some of the lower frequency values and placed it in a "other" column.  Unfortunately, these changes did not yield the desired improvements.
 
