@@ -51,15 +51,18 @@ The purpose of exercise is to use skills learned during the Neural Network modul
 * APPLICATION plotted and then grouped
 
 ![004PlotAppType](Images/004PlotAppType.png)
+
 ![005AppTypeGroupe](Images/005AppTypeGrouped.png)
 
 * CLASSIFICATION plotted and then grouped
 
 ![006PlotClass.png](Images/006PlotClass.png)
+
 ![007ClassTypeGrouped](Images/007ClassTypeGrouped.png)
 
 * The preprocessed data is split into features and target arrays
-* * The preprocessed data is split into training and testing datasets
+
+    * The preprocessed data is split into training and testing datasets
 
 ![010SPlitintFeatureandTarge](Images/010SPlitintFeatureandTarget.png)
 
@@ -74,35 +77,39 @@ The neural network model using Tensorflow Keras contains working code that perfo
 
 * The number of layers, the number of neurons per layer, and activation function are defined
 
-![011DataScaled](Images/011DataScaled.png)
-
-* An output layer with an activation function is created
-
-![011DataScaled](Images/011DataScaled.png)
-
-* There is an output for the structure of the model
-
-![011DataScaled](Images/011DataScaled.png)
+![D2_001.](Images/D2_001.png)
 
 * There is an output of the model’s loss and accuracy
 
-![011DataScaled](Images/011DataScaled.png)
+![D2LossAccuracy](Images/D2LossAccuracy.png)
 
 * The model's weights are saved every 5 epochs
 
-![011DataScaled](Images/011DataScaled.png)
+![D2checkpointEvery5](Images/D2checkpointEvery5.png)
+
+* The resulting output highlighting data structure and checkpoints
+
+![D2outputStructur](Images/D2outputStructure.png)
 
 * The results are saved to an HDF5 file
 
-![011DataScaled](Images/011DataScaled.png)
+![D2_h5output](Images/D2_h5output.png)
+
 
 ### Deliverable 3: Optimize the Model
 
 #### Optimization 1
 
+The approach that I took for my first attempt to optimize the model was to try to reduce noise from the model and increase the epochs from 50 to 150.  To reduce "Noise" I dropped the "SPECIAL_CONSIDERATIONS" column and created code to create bins for the "ASK_AMT" to reduce the impact of outliers on the model. 
+
+![D2_h5output](Images/D2_h5output.png)
+
 #### Optimization 2
+
+![D2_h5output](Images/D2_h5output.png)
 
 #### Optimization 3
 
+![D2_h5output](Images/D2_h5output.png)
 
 ### Deliverable 4: A Written Report on the Neural Network Model
