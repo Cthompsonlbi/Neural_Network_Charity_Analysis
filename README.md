@@ -2,9 +2,9 @@
 Module 19 Challenge
 ## Overview
 
-With my knowledge of machine learning and neural networks, I will help Beks by using the features in the charity dataset to create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup.
+With my knowledge of machine learning and neural networks, I will help Beks by using the features in the charity dataset to create a binary classifier that can predict whether applicants will be successful if funded by Alphabet Soup.
 
-Beks received a CSV containing more than 34,000 organizations from Alphabet Soup’s business team, that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization.  These columns will be preprocessed and utilized to create a Neural Network model, train the model and test the model for accuracy.
+Beks received a CSV containing more than 34,000 organizations from Alphabet Soup’s business team, that have received funding from Alphabet Soup over the years. Within this dataset there are several columns that capture metadata about each organization.  These columns will be preprocessed and utilized to create a Neural Network model, train the model, and test the model for accuracy.
 
 ## Purpose
 
@@ -16,7 +16,7 @@ The purpose of exercise is to use skills learned during the Neural Network modul
 
 ![001DataLoad](Images/001DataLoad.PNG)
 
-* From this dataset the columns that will be considered as features are a follows:
+* From this dataset the columns that will be considered as features are as follows:
 
     * APPLICATION_TYPE—Alphabet Soup application type
     * AFFILIATION—Affiliated sector of industry
@@ -72,7 +72,7 @@ The purpose of exercise is to use skills learned during the Neural Network modul
 
 ### Deliverable 2: Compile, Train, and Evaluate the Model
 
-The neural network model using Tensorflow Keras contains working code that hightlights the following:
+The neural network model using Tensorflow Keras contains working code that highlights the following:
 
 * The number of layers, the number of neurons per layer, and activation function are defined
 
@@ -99,13 +99,13 @@ The neural network model using Tensorflow Keras contains working code that hight
 
 #### Optimization 1
 
-The approach that I took for my first attempt to optimize the model was to try to reduce noise from the model and increase the epochs from 50 to 150.  To reduce "Noise" I dropped the "SPECIAL_CONSIDERATIONS" column and created code to create bins for the "ASK_AMT" to reduce the impact of outliers on the model. After running the model with these modifications the results yielded very little improvement.
+The approach that I took for my first attempt to optimize the model was to try to reduce noise from the model and increase the epochs from 50 to 150.  To reduce "Noise" I dropped the "SPECIAL_CONSIDERATIONS" column and created code to create bins for the "ASK_AMT" to reduce the impact of outliers on the model. After running the model with these modifications, the results yielded very little improvement.
 
 ![Del3Opt1](Images/Del3Opt1.png)
 
 #### Optimization 2
 
-The approach that I took for my second attempt to optimize the model was to keep the changes made for the first optimization which was meant to reduce noise from the model and increase the epochs.  To reduce "Noise" I dropped the "SPECIAL_CONSIDERATIONS" column and created code to create bins for the "ASK_AMT" to reduce the impact of outliers on the model. Then I added two additional layers and increased the Neurons of he original two hidden layers.  Finally, I increased Epochs from 100 to 150.  After running the model with these modifications the results yielded very little improvement.
+The approach that I took for my second attempt to optimize the model was to keep the changes made for the first optimization which was meant to reduce noise from the model and increase the epochs.  To reduce "Noise" I dropped the "SPECIAL_CONSIDERATIONS" column and created code to create bins for the "ASK_AMT" to reduce the impact of outliers on the model. Then I added two additional layers and increased the Neurons of he original two hidden layers.  Finally, I increased Epochs from 100 to 150.  After running the model with these modifications, the results yielded very little improvement.
 
 ![Del3Opt2Mod](Images/Del3Opt2Mod.PNG)
 
@@ -113,7 +113,8 @@ The approach that I took for my second attempt to optimize the model was to keep
 ![Del3Opt2](Images/Del3Opt2.png)
 
 #### Optimization 3
-For the third optimization attempt, I kept intact the changes made during the first two optimization attempts.  My approach to improvee the optimization of this model was to try to find more possible noise contributors remove it. I also added Neurons to the existing hidden layers and changed the Activation on one of the layers.
+
+For the third optimization attempt, I kept intact the changes made during the first two optimization attempts.  My approach to improve the optimization of this model was to try to find more possible noise contributors remove it. I also added Neurons to the existing hidden layers and changed the Activation on one of the layers.  To reduce the noise further, I dropped the USE_CASE and STATUS Features from the dataset and for the INCOME_AMT feature I grouped some of the lower frequency values and placed it in a "other" column.  Unfortunately, these changes did not yield the desired improvements.
 
 ![Del3Opt3Mod](Images/Del3Opt3Mod.PNG)
 
@@ -122,6 +123,6 @@ For the third optimization attempt, I kept intact the changes made during the fi
 
 ### Summary
 
-Very challenging assignment. I tried to tweak so many different features, neurons, layers, activations etc.  I spent a day and a half trying to figure out how to get the model to improve.  Definitely found ways to make the model worse but, nothing made it substantially better.  There were so many optimization attempts that were not saved in the submitted files.  I even tried an RandomForest model to see if it could yield better results. Definitely interested in learning the right approach for this data set. 
+Very challenging assignment. I tried to tweak so many different features, neurons, layers, activations etc.  I spent a day and a half trying to figure out how to get the model to improve.  I definitely found ways to make the model worse but, nothing made it substantially better.  There were so many optimization attempts that were not saved in the submitted files.  I even tried an RandomForest model to see if it could yield better results. Definitely I would be interested in learning the right approach for this data set. 
 
 On a side note, I am currently looking for opportunities to use skills learned in module 18 and 19 with my current employer.
