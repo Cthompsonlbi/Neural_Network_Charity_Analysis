@@ -1,11 +1,14 @@
 # Neural_Network_Charity_Analysis
 Module 19 Challenge
 ## Overview
-Beks has come a long way since her first day at that boot camp five years ago—and since earlier this week, when she started learning about neural networks! Now, she is finally ready to put her skills to work to help the foundation predict where to make investments.
 
-With your knowledge of machine learning and neural networks, you’ll use the features in the provided dataset to help Beks create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup.
+With my knowledge of machine learning and neural networks, I will help Beks by using the features in the charity dataset to create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup.
 
-From Alphabet Soup’s business team, Beks received a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization, such as the following:
+Beks received a CSV containing more than 34,000 organizations from Alphabet Soup’s business team, that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization.  These columns will be preprocessed and utilized to create a Neural Network model, train the model and test the model for accuracy.
+
+## Purpose
+
+The purpose of exercise is to use skills learned during the Neural Network module to create, train, test and optimize a Neural Network model.  To complete this activity, we will use Python, sklearn, tensorflow, and pandas.
 
 EIN and NAME—Identification columns
 APPLICATION_TYPE—Alphabet Soup application type
@@ -23,6 +26,8 @@ IS_SUCCESSFUL—Was the money used effectively
 ## Purpose
 
 ### Deliverable 1: Preprocessing Data for a Neural Network Model
+
+
 
 The EIN and NAME columns have been dropped
 The columns with more than 10 unique values have been grouped together
@@ -42,4 +47,12 @@ The model's weights are saved every 5 epochs (2.5 pt)
 The results are saved to an HDF5 file (2.5 pt)
 
 ### Deliverable 3: Optimize the Model
+
+#### Optimization 1
+
+#### Optimization 2
+
+#### Optimization 3
+
+
 ### Deliverable 4: A Written Report on the Neural Network Model
