@@ -100,16 +100,19 @@ The neural network model using Tensorflow Keras contains working code that perfo
 
 #### Optimization 1
 
-The approach that I took for my first attempt to optimize the model was to try to reduce noise from the model and increase the epochs from 50 to 150.  To reduce "Noise" I dropped the "SPECIAL_CONSIDERATIONS" column and created code to create bins for the "ASK_AMT" to reduce the impact of outliers on the model. 
+The approach that I took for my first attempt to optimize the model was to try to reduce noise from the model and increase the epochs from 50 to 150.  To reduce "Noise" I dropped the "SPECIAL_CONSIDERATIONS" column and created code to create bins for the "ASK_AMT" to reduce the impact of outliers on the model. After running the model with these modifications the results yielded very little improvement.
 
-![D2_h5output](Images/D2_h5output.png)
+![Del3Opt1](Images/Del3Opt1.png)
 
 #### Optimization 2
 
-![D2_h5output](Images/D2_h5output.png)
+The approach that I took for my second attempt to optimize the model was to keep the changes made for the first optimization which was meant to reduce noise from the model and increase the epochs.  To reduce "Noise" I dropped the "SPECIAL_CONSIDERATIONS" column and created code to create bins for the "ASK_AMT" to reduce the impact of outliers on the model. Then I added two additional layers and increased the Neurons of he original two hidden layers.  After running the model with these modifications the results yielded very little improvement.
+
+![Del3Opt2mod](Images/Del3Opt2mod.png)
+![Del3Opt2](Images/Del3Opt2.png)
 
 #### Optimization 3
 
-![D2_h5output](Images/D2_h5output.png)
+![Del3Opt3](Images/Del3Opt3.png)
 
 ### Deliverable 4: A Written Report on the Neural Network Model
